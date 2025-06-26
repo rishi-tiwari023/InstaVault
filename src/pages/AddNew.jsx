@@ -6,7 +6,7 @@ async function fetchInstagramProfile(url) {
   if (!match) return null;
   const username = match[1].replace(/\/$/, '');
 
-  const fetchUrl = `http://localhost:5000/api/instagram/${username}`;
+    const fetchUrl = `https://insta-proxy-6f4w.onrender.com/api/instagram/${username}`;
   console.log('Fetching:', fetchUrl);
   const response = await fetch(fetchUrl);
   console.log('Response status:', response.status);
